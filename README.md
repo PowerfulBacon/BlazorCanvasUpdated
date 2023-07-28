@@ -1,5 +1,6 @@
 # Canvas
-HTML5 Canvas API implementation for Microsoft Blazor
+HTML5 Canvas API implementation for Microsoft Blazor updated for WebGL2.
+The WebGL2 functions haven't been fully implemented, if you need one that hasn't been implemented make an issue and I'll add it.
 
 <!--
 [![Build](https://github.com//PowerfulBacon/BlazorCanvasUpdated/workflows/CI/badge.svg)](https://github.com/PowerfulBacon/BlazorCanvasUpdated/actions)
