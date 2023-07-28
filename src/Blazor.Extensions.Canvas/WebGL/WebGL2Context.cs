@@ -32,7 +32,7 @@ namespace Blazor.Extensions.Canvas.WebGL
         /// <param name="index">A GLuint specifying the index of the generic vertex attributes.</param>
         /// <param name="divisor">A GLuint specifying the number of instances that will pass between updates of the generic attribute. </param>
         /// <returns>None (undefined).</returns>
-        public async Task VertexAttribDivisorAsync(int index, int divisor) => await this.BatchCallAsync(VERTEX_ATTRIB_DIVISOR, isMethodCall: true, index, divisor);
+        public async Task VertexAttribDivisorAsync(uint index, uint divisor) => await this.BatchCallAsync(VERTEX_ATTRIB_DIVISOR, isMethodCall: true, index, divisor);
 
         #endregion
 
