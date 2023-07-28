@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Blazor.Extensions.Canvas.WebGL
 {
-    public class WebGLContext : RenderingContext
+    public partial class WebGLContext : RenderingContext
     {
         #region Constants
         private const string CONTEXT_NAME = "WebGL";
@@ -118,6 +118,7 @@ namespace Blazor.Extensions.Canvas.WebGL
         private const string DRAW_ELEMENTS = "drawElements";
         private const string FINISH = "finish";
         private const string FLUSH = "flush";
+
         #endregion
 
         #region Properties
@@ -136,6 +137,7 @@ namespace Blazor.Extensions.Canvas.WebGL
         }
 
         #region Methods
+
         [Obsolete("Use the async version instead, which is already called internally.")]
         public void ClearColor(float red, float green, float blue, float alpha) => this.CallMethod<object>(CLEAR_COLOR, red, green, blue, alpha);
         public async Task ClearColorAsync(float red, float green, float blue, float alpha) => await this.BatchCallAsync(CLEAR_COLOR, isMethodCall: true, red, green, blue, alpha);
