@@ -134,7 +134,13 @@ namespace Blazor.Extensions.Canvas.WebGL
     public enum BufferType
     {
         ARRAY_BUFFER = 0x8892,
-        ELEMENT_ARRAY_BUFFER = 0x8893
+        ELEMENT_ARRAY_BUFFER = 0x8893,
+        COPY_READ_BUFFER = 0x8F36,
+        COPY_WRITE_BUFFER = 0x8F37,
+        TRANSFORM_FEEDBACK_BUFFER = 0x8C8E,
+        UNIFORM_BUFFER = 0x8A11,
+        PIXEL_PACK_BUFFER = 0x88EB,
+        PIXEL_UNPACK_BUFFER = 0x88EC,
     }
 
     public enum BufferParameter
